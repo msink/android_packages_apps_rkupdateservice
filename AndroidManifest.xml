@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.rockchip.update.service"
+    android:versionCode="5" android:versionName="1.3.1" >
+
+    <permission android:name="android.rockchip.update.permission.SHOW_UI"
+        android:label="@string/permlab_showUI"
+        android:description="@string/permdesc_shwoUI"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.rockchip.update.permission.SHOW_UI" />
+
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_MTP" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:label="@string/app_name"
+            android:icon="@drawable/icon">
+
+        <receiver android:name=".RKUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".RKUpdateService">
+            <intent-filter>
+                <action android:name="android.rockchip.update.service" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".FirmwareUpdatingActivity"
+                android:theme="@*android:style/Theme.Dialog.Alert"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:exported="true"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".UpdateAndRebootActivity"
+                android:theme="@*android:style/Theme.Dialog.Alert"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".InvalidFirmwareImageActivity"
+                android:theme="@*android:style/Theme.Dialog.Alert"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".NoImageActivity"
+                android:theme="@*android:style/Theme.Dialog.Alert"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".NotifyDeleteActivity"
+                android:theme="@*android:style/Theme.Dialog"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".PackageDownloadActivity"
+                android:theme="@*android:style/Theme.Dialog"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:launchMode="singleInstance"
+                android:multiprocess="false"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".OtaUpdateNotifyActivity"
+                android:theme="@*android:style/Theme.Dialog"
+                android:permission="android.rockchip.update.permission.SHOW_UI"
+                android:launchMode="singleInstance"
+                android:excludeFromRecents="true" />
+
+        <activity android:name=".Setting"
+                android:icon="@drawable/ota_update"
+                android:launchMode="singleInstance"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.settings.SYSTEM_UPDATE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+   </application>
+
+</manifest>

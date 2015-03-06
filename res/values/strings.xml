@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SystemUpdate</string>
+    <string name="permlab_showUI">Show UI for firmware update.</string>
+    <string name="permdesc_shwoUI">Show UI for firmware update.</string>
+    <string name="updating_title">Firmware Updating</string>
+    <string name="updating_message_formate">"An update package file is found: '%1$s'. Would you like to install?"</string>
+    <string name="updating_button_install">Install</string>
+    <string name="updating_button_cancel">Cancel</string>
+    <string name="updating_prompt">Now is to check the package! Device is going to reboot and update firmware, please keep your USB cable or DC-in connected!</string>
+    <string name="updating_prompt_sdcard">Do NOT remove SD card from the device!</string>
+    <string name="IFIA_title">Invalid firmware image</string>
+    <string name="IFIA_msg">"Found an invalid firmware image file '%1$s'. Would you like to delete it?"</string>
+    <string name="IFIA_btn_yes">Yes</string>
+    <string name="IFIA_btn_no">No</string>
+    <string name="NIA_title">No update image file</string>
+    <string name="NIA_msg_format">"There is no firmware image file in directory '%1$s' and '%2$s'!"</string>
+    <string name="NIA_btn_ok">OK</string>
+    <string name="ask_delete_package">"To delete update package? It's safe to delete. If not, the system may once again asking for update, which is annoying!"</string>
+    <string name="update_success">Congratulations. Update succeeded!</string>
+    <string name="update_failed">Sorry, firmware update failed!</string>
+    <string name="state_idle">State: Idle</string>
+    <string name="downloading">Downloading</string>
+    <string name="ota_update">Find an OTA update package! Do you want to update? Update package version:</string>
+    <string name="ota_package_size">, size:</string>
+    <string name="start">Start</string>
+    <string name="starting">Starting</string>
+    <string name="retry">Retry</string>
+    <string name="pause">Pause</string>
+    <string name="stoping">Stopping</string>
+    <string name="cancel_update">Cancel download</string>
+    <string name="auto_check">Auto check update</string>
+    <string name="check_now">Check now</string>
+    <string name="update_error">error</string>
+    <string name="update_error_summary">not a valid update package！</string>
+</resources>

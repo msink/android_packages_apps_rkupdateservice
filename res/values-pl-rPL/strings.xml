@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aktualizacja Systemu</string>
+    <string name="permlab_showUI">Pokaż UI aktualizacji systemu.</string>
+    <string name="permdesc_shwoUI">Pokaż UI aktualizacji systemu.</string>
+    <string name="updating_title">Aktualizacja Oprogramowania</string>
+    <string name="updating_message_formate">"Znaleziono paczke z aktualizacją: '%1$s'. Czy chcesz ją teraz zainstalować?"</string>
+    <string name="updating_button_install">Instaluj</string>
+    <string name="updating_button_cancel">Anuluj</string>
+    <string name="updating_prompt">"Sprawdzanie paczki aktualizacji. To może potrwać kilka minut. Proszę nie korzystać z urządzenia w trakcie trwania procesu. Urządzenie uruchomi sie ponownie i zainstaluje aktualizcję.\n\nSugerujemy podłączenie urządzenia do źródła zasilania."</string>
+    <string name="updating_prompt_sdcard">Proszę NIE usuwać karty SD z urządzenia!</string>
+    <string name="IFIA_title">Nieprawidłowy obraz oprogramowania</string>
+    <string name="IFIA_msg">"Znaleziono nieprawidłowy plik oprogramowania '%1$s'. Czy chcesz go usunąć?"</string>
+    <string name="IFIA_btn_yes">Tak</string>
+    <string name="IFIA_btn_no">Nie</string>
+    <string name="NIA_title">Nie znaleziono pliku z aktulizacją</string>
+    <string name="NIA_msg_format">"Plik aktualizacji nie istnieje w lokalizacjach '%1$s' i '%2$s'!"</string>
+    <string name="NIA_btn_ok">OK</string>
+    <string name="ask_delete_package">Usunąć plik z aktualizacją? Jeśli plik nie zostanie usunięty urządzenie może ponownie pytać o wykonanie aktualizacji!</string>
+    <string name="update_success">Aktualizacja przebiegła pomyślnie!</string>
+    <string name="update_failed">Aktualizacja nie powiodła się!</string>
+    <string name="state_idle">Stan: Bezczynny</string>
+    <string name="downloading">Pobieranie</string>
+    <string name="ota_update">Znaleziono nową wersję oprogramowania! Czy chcesz wykonać aktualizację? Wersja oprogramowania:</string>
+    <string name="ota_package_size">, rozmiar:</string>
+    <string name="start">Rozpocznij</string>
+    <string name="starting">Rozpoczynanie</string>
+    <string name="retry">Ponów</string>
+    <string name="pause">Wstrzymaj</string>
+    <string name="stoping">Wstrzymywanie</string>
+    <string name="cancel_update">Anuluj pobieranie</string>
+    <string name="auto_check">Sprawdzaj automatycznie</string>
+    <string name="check_now">Sprawdź teraz</string>
+    <string name="update_error">błąd</string>
+    <string name="update_error_summary">nieprawidłowa paczka oprogramowania！</string>
+</resources>

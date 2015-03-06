@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Обновление системы</string>
+    <string name="permlab_showUI">Показать настройки обновления системы</string>
+    <string name="permdesc_shwoUI">Показать настройки обновления системы</string>
+    <string name="updating_title">Обновление системы</string>
+    <string name="updating_message_formate">"Файл обновления найден: '%1$s'. Установить обновление?"</string>
+    <string name="updating_button_install">Установить</string>
+    <string name="updating_button_cancel">Отмена</string>
+    <string name="updating_prompt">Установочный пакет проверяется. Устройство перезагрузится и начнётся обновление системы. В течение этого процесса кабель USB или сетевое зарядное устройство должно быть подключено.</string>
+    <string name="updating_prompt_sdcard">Не извлекайте карту памяти!</string>
+    <string name="IFIA_title">Неверный дистрибутив обновленя</string>
+    <string name="IFIA_msg">"Файл обновления некорректен: '%1$s'. Удалить этот файл?"</string>
+    <string name="IFIA_btn_yes">Да</string>
+    <string name="IFIA_btn_no">Нет</string>
+    <string name="NIA_title">Файл обновления не найден</string>
+    <string name="NIA_msg_format">"Файл обновления не найден в директориях '%1$s' and '%2$s'!"</string>
+    <string name="NIA_btn_ok">Да</string>
+    <string name="ask_delete_package">Удалить файл обновления? Это безопасно. Если нет, система может повторно задать этот вопрос.</string>
+    <string name="update_success">Обновление прошло успешно!</string>
+    <string name="update_failed">Обновление не удалось</string>
+    <string name="state_idle">Режим ожидания</string>
+    <string name="downloading">Загрузка</string>
+    <string name="ota_update">Доступно OTA-обновление. Вы хотите его установить? Новая версия:</string>
+    <string name="ota_package_size">, размер:</string>
+    <string name="start">Старт</string>
+    <string name="starting">Запуск</string>
+    <string name="retry">Повтор</string>
+    <string name="pause">Пауза</string>
+    <string name="stoping">Остановка</string>
+    <string name="cancel_update">Отмена загрузки</string>
+    <string name="auto_check">Автопроверка обновлений</string>
+    <string name="check_now">Проверить сейчас</string>
+    <string name="update_error">ошибка</string>
+    <string name="update_error_summary">не является допустимым пакетом обновлений!</string>
+</resources>

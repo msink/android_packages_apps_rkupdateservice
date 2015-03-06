@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">系統升級</string>
+    <string name="updating_title">固件升級</string>
+    <string name="updating_message_formate">"發現一個固件文件 : '%1$s'.是否要升級到該鏡像文件?"</string>
+    <string name="updating_button_install">安裝</string>
+    <string name="updating_button_cancel">放棄</string>
+    <string name="updating_prompt">設備將重啟併升級固件, 請保證您的USB 電纜或充電器是連接狀態!</string>
+    <string name="updating_prompt_sdcard">請切勿將 SD 卡從設備中拔出.</string>
+    <string name="IFIA_title">無效的固件鏡像.</string>
+    <string name="IFIA_msg">"發現一個無效的固件鏡像文件 '%1$s'. 是否需要刪除它?"</string>
+    <string name="IFIA_btn_yes">是</string>
+    <string name="IFIA_btn_no">否</string>
+    <string name="NIA_title">沒有升級用鏡像文件</string>
+    <string name="NIA_msg_format">"在目錄 '%1$s' 和 '%2$s' 中, 沒有固件鏡像文件."</string>
+    <string name="NIA_btn_ok">確認</string>
+    <string name="ask_delete_package">是否刪除升級包？如果不刪除，系統可能會再次提示升級，可能會給您帶來不便！</string>
+    <string name="update_success">恭喜升級成功!</string>
+    <string name="update_failed">對不起升級失敗!</string>
+    <string name="ota_update">可以升級新版本! 確定要升級嗎? 升級包版本:</string>
+    <string name="ota_package_size">, 大小:</string>
+    <string name="start">開始</string>
+    <string name="starting">正在開始</string>
+    <string name="retry">重試</string>
+    <string name="pause">暫停</string>
+    <string name="stoping">正在停止</string>
+    <string name="cancel_update">取消下載</string>
+    <string name="auto_check">自動檢查更新</string>
+    <string name="check_now">立即檢查</string>
+</resources>
